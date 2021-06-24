@@ -1,0 +1,245 @@
+/* ============ styles for root ============ */
+/* черный цвет текста логотипа #000000 */
+/* цвет заголовков #212121 */
+/* цвет абзацев #757575 */
+/* посвечивание активных страниц, а также при ховере и фокусе цвет #2196f3*/
+/* цвет #FFFFFF изменение цвета текста при ховере и фокусе; цвет фона блока "навигация" */
+/* цвет фона героя и футера 2F303A */
+/* цвет фона секции "команда" */
+/* цвет текста с прозрачностью в футере rgba(255, 255, 255, 0.6)*/
+:root {
+  --logo-black-textcolor: #000000;
+  --title-textcolor: #212121;
+  --paragraph-textcolor: #757575;
+  --theme-textcolor: #2196f3;
+  --hover-textcolor: #ffffff;
+  --main-background-color: #2f303a;
+  --command-section-background-color: #f5f4fa;
+  --footer-contacts-textcolor: rgba(255, 255, 255, 0.6);
+}
+/* COMPONENTS */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: solid tomato 1px;
+  /* NE TO */
+}
+/* END COMPONENTS */
+/* ============ styles for body ============ */
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/* ============ styles for header ============ */
+.menu {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.nav-section {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--theme-textcolor);
+  margin-left: 215px;
+}
+.header-studio {
+  color: var(--logo-black-textcolor);
+}
+.nav-list-item:hover,
+.nav-list-item:focus {
+  color: var(--theme-textcolor);
+}
+.site-nav .nav-list-item.current {
+  color: var(--theme-textcolor);
+}
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.contact-list .item:not(:last-child) {
+  margin-right: 50px;
+  margin-left: 313px;
+}
+.contact-list {
+  display: flex;
+}
+.contact-list-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-list-item {
+  color: var(--title-textcolor);
+}
+.contact-list-item {
+  color: var(--paragraph-textcolor);
+}
+.contact-list-item:hover,
+.contact-list-item:focus {
+  color: var(--theme-textcolor);
+}
+/* ============ styles for hero ============ */
+.hero-section {
+  background-color: var(--main-background-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--hover-textcolor);
+  padding-top: 200px;
+  padding-right: 252px;
+  padding-bottom: 280px;
+  padding-left: 252px;
+}
+.modal-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--hover-textcolor);
+  background-color: var(--theme-textcolor);
+  font-family: inherit;
+  cursor: pointer;
+}
+/* ============ styles for our_methods ============ */
+.our-methods-section {
+}
+.methods-list-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-textcolor);
+}
+.methods-list-item-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--paragraph-textcolor);
+}
+/* ============ styles for tasks ============ */
+
+/* ============ styles for command ============ */
+.command-section {
+  background-color: var(--command-section-background-color);
+}
+.tasks-command-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--title-textcolor);
+}
+.command-list-item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-textcolor);
+}
+.command-list-item-text {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--paragraph-textcolor);
+}
+/* ============ styles for footer ============ */
+.footer-section {
+  background-color: var(--main-background-color);
+}
+.footer-studio {
+  color: var(--hover-textcolor);
+}
+.address-list {
+  font-style: inherit;
+}
+.geoposition,
+.address-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.geoposition {
+  color: var(--hover-textcolor);
+}
+.geoposition:hover,
+.geoposition:focus {
+  color: var(--theme-textcolor);
+}
+.address-link {
+  color: var(--footer-contacts-textcolor);
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--theme-textcolor);
+}
+/* ============ styles for PAGE portfolio ============ */
+.modal-btn-portfolio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-family: inherit;
+  color: var(--title-textcolor);
+}
+.modal-btn-portfolio:hover,
+.modal-btn-portfolio:focus {
+  color: var(--hover-textcolor);
+  background-color: var(--theme-textcolor);
+  cursor: pointer;
+}
+.menu-list h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-textcolor);
+}
+.menu-list p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--paragraph-textcolor);
+}
+.btn-portfolio .modal-btn-portfolio.current {
+  background-color: var(--theme-textcolor);
+  color: var(--hover-textcolor);
+}

@@ -51,11 +51,17 @@ ul {
 }
 /* обнуление свойств кнопки */
 .button {
-  border: none;
+  border: 1px solid transparent;
   background: transparent;
   color: inherit;
   font-family: inherit;
   cursor: pointer;
+}
+/* обнуление свойств изображений */
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* ============ styles for header ============ */
 .menu {
@@ -158,12 +164,16 @@ ul {
   …
 }
 .our-methods-section {
+  margin-top: 94px;
 }
 .methods-list {
   display: flex;
+  margin-left: -30px;
+  padding: 0;
 }
 .methods-list-item {
-  flex-basis: calc(100% / 4);
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
   outline: solid teal 1px;
 }
 .methods-list-item-title {
@@ -179,9 +189,25 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--paragraph-textcolor);
+  margin-top: 10px;
 }
 /* ============ styles for tasks ============ */
-
+.tasks {
+  text-align: center;
+}
+.tasks-command-title {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.tasks-images {
+  display: flex;
+  margin-top: 50px;
+  margin-right: -30px;
+}
+.tasks-images-item {
+  margin-right: 30px;
+  flex-basis: calc(100% / 3 - 2*30px);
+}
 /* ============ styles for command ============ */
 .command-section {
   background-color: var(--command-section-background-color);
@@ -192,6 +218,17 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--title-textcolor);
+  padding-top: 94px;
+  text-align: center;
+
+}
+.command-list {
+  display: flex;
+  border-radius: 0px 0px 4px 4px;
+}
+.command-list-item {
+  flex-basis: calc(100% / 4 - 30px);
+  outline: solid teal 1px;
 }
 .command-list-item-title {
   font-weight: 500;
@@ -199,12 +236,14 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-textcolor);
+  padding-top: 30px;
 }
 .command-list-item-text {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--paragraph-textcolor);
+  padding-top: 10px;
 }
 /* ============ styles for footer ============ */
 .footer-section {

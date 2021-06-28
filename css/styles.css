@@ -49,6 +49,14 @@ ul {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+/* обнуление свойств кнопки */
+.button {
+  border: none;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
 /* ============ styles for header ============ */
 .menu {
   display: flex;
@@ -67,7 +75,7 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--theme-textcolor);
-  margin-left: 215px;
+  padding-right: 93px;
 }
 .header-studio {
   color: var(--logo-black-textcolor);
@@ -81,17 +89,17 @@ ul {
 }
 .site-nav {
   display: flex;
-  margin-left: 93px;
+  margin-left: 0px;
 }
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
 .contact-list .item:not(:last-child) {
   margin-right: 50px;
-  margin-left: 313px;
 }
 .contact-list {
   display: flex;
+  margin-left: auto;
 }
 .contact-list-item {
   font-weight: 500;
@@ -112,6 +120,12 @@ ul {
 /* ============ styles for hero ============ */
 .hero-section {
   background-color: var(--main-background-color);
+  padding-top: 200px;
+  padding-bottom: 280px;
+  text-align: center;
+}
+.hero-section .container {
+  width: 696px;
 }
 .hero-title {
   font-weight: 900;
@@ -120,10 +134,6 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--hover-textcolor);
-  padding-top: 200px;
-  padding-right: 252px;
-  padding-bottom: 280px;
-  padding-left: 252px;
 }
 .modal-btn {
   font-weight: 700;
@@ -134,9 +144,27 @@ ul {
   background-color: var(--theme-textcolor);
   font-family: inherit;
   cursor: pointer;
+  padding: 10px 32px;
+  margin-top: 30px;
+  border-radius: 4px;
 }
 /* ============ styles for our_methods ============ */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
+}
 .our-methods-section {
+}
+.methods-list {
+  display: flex;
+}
+.methods-list-item {
+  flex-basis: calc(100% / 4);
+  outline: solid teal 1px;
 }
 .methods-list-item-title {
   font-weight: 700;

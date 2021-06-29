@@ -48,6 +48,7 @@ p,
 ul {
   margin-top: 0px;
   margin-bottom: 0px;
+  padding-left: 0px;
 }
 /* обнуление свойств кнопки */
 .button {
@@ -67,8 +68,6 @@ ul {
 .menu {
   display: flex;
   align-items: center;
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 .nav-section {
   display: flex;
@@ -171,7 +170,7 @@ ul {
   margin: -1px;
   …
 }
-.our-methods-section {
+.our-methods-section .container {
 padding: 94px 0px;
 }
 .methods-list {
@@ -213,9 +212,15 @@ padding: 94px 0px;
 .tasks-images-item {
   flex-basis: calc((100% - 90px) / 3);
 }
+.tasks-images-item .gap {
+  display: block;
+}
 /* ============ styles for command ============ */
 .command-section {
   background-color: var(--command-section-background-color);
+}
+.command-section .container {
+  padding: 94px 0px;
 }
 .tasks-command-title {
   font-weight: 700;
@@ -227,7 +232,7 @@ padding: 94px 0px;
 }
 .command-list {
   display: flex;
-  border-radius: 0px 0px 4px 4px;
+  padding-top: 50px;
 }
 .command-list-item {
   flex-basis: calc(100% / 4 - 30px);
@@ -251,12 +256,19 @@ padding: 94px 0px;
 /* ============ styles for footer ============ */
 .footer-section {
   background-color: var(--main-background-color);
+  width: 1600px;
+  max-width: 100%;
+  margin: 0 auto;  
+}
+.footer-section .container {
+  padding: 60px 0px;
 }
 .footer-studio {
   color: var(--hover-textcolor);
 }
 .address-list {
   font-style: inherit;
+  margin-top: 20px;
 }
 .geoposition,
 .address-link {
@@ -279,6 +291,11 @@ padding: 94px 0px;
 .address-link:focus {
   color: var(--theme-textcolor);
 }
+.address-list-item {
+  margin-top: 9px;
+}
+.address-list-item:first-child {
+  margin-top: 0;
 /* ============ styles for PAGE portfolio ============ */
 .modal-btn-portfolio {
   font-weight: 500;

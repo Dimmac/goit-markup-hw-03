@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title lang="en">Studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -39,7 +39,8 @@
                 </div>
             </section>
         <!--our_methods-->
-            <section class="our-methods-section container">
+            <section class="our-methods-section">
+                <div class="container">
                     <h2 class="visually-hidden">our_methods</h2>
                     <ul class="methods-list list">
                         <li class="methods-list-item">
@@ -59,18 +60,22 @@
                             <p class="methods-list-item-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                         </li>
                     </ul>
+                </div>
             </section>
             <!--tasks-->
-            <section class="tasks container">
-                <h2 class="tasks-command-title">Чем мы занимаемся</h2>
-                    <ul class="tasks-images list">
-                        <li class="tasks-images-item"><img src="./images/tasks/box1.jpeg" alt="разрабочик создет програмный код на компьютере" width="370"></li>
-                        <li class="tasks-images-item"><img src="./images/tasks/box2.jpeg" alt="визуализация адаптации отображения приложения на смартфоне" width="370"></li>
-                        <li class="tasks-images-item"><img src="./images/tasks/box3.jpeg" alt="работа с выбором цвета на дисплее планшета" width="370"></li>
-                    </ul>
+            <section class="tasks">
+                <div class="container">
+                    <h2 class="tasks-command-title">Чем мы занимаемся</h2>
+                        <ul class="tasks-images list">
+                            <li class="tasks-images-item"><img class="gap" src="./images/tasks/box1.jpeg" alt="разрабочик создет програмный код на компьютере" width="370"></li>
+                            <li class="tasks-images-item"><img class="gap" src="./images/tasks/box2.jpeg" alt="визуализация адаптации отображения приложения на смартфоне" width="370"></li>
+                            <li class="tasks-images-item"><img class="gap" src="./images/tasks/box3.jpeg" alt="работа с выбором цвета на дисплее планшета" width="370"></li>
+                        </ul>
+                </div>
             </section>
         <!--command-->
-            <section class="command-section container">
+            <section class="command-section">
+                <div class="container">
                     <h2 class="tasks-command-title">Наша команда</h2>
                         <ul class="command-list list">
                             <li class="command-list-item"><img src="./images/command/img_0.jpeg" alt="технический специалист Игорь" width="270">
@@ -90,17 +95,20 @@
                                 <p class="command-list-item-text" lang="en">UI Designer</p>
                             </li>
                         </ul>
+                </div>
             </section>
     </main>
-    <footer class="footer-section container">
-        <a class="logo link" href=""><span lang="en">Web</span><span lang="en" class="footer-studio">Studio</span></a>
-        <address class="address-list">
-            <ul class="list">
-                <li><a href="https://goo.gl/maps/wNvCTapRVfwGsnRAA" target="_blank" rel="noopener noofferer" class="geoposition link">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a href="mailto:info@example.com" class="address-link link">info@example.com</a></li>
-                <li><a href="tel:+380991111111" class="address-link link">+38 099 111 11 11</a></li>
-            </ul>
-        </address>
+    <footer class="footer-section">
+        <div class="container">
+            <a class="logo link" href=""><span lang="en">Web</span><span lang="en" class="footer-studio">Studio</span></a>
+            <address class="address-list">
+                <ul class="list">
+                    <li class="address-list-item"><a href="https://goo.gl/maps/wNvCTapRVfwGsnRAA" target="_blank" rel="noopener noofferer" class="geoposition link">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="address-list-item"><a href="mailto:info@example.com" class="address-link link">info@example.com</a></li>
+                    <li class="address-list-item"><a href="tel:+380991111111" class="address-link link">+38 099 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
 </html>

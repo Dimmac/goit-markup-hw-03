@@ -65,13 +65,11 @@ ul {
   height: auto;
 }
 /* ============ styles for header ============ */
-.menu {
+.menu .container{
   display: flex;
-  align-items: center;
 }
 .nav-section {
   display: flex;
-  align-items: center;
 }
 .logo {
   font-family: "Raleway";
@@ -80,15 +78,11 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--theme-textcolor);
-  padding-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
 }
 .header-studio {
   color: var(--logo-black-textcolor);
-}
-.nav-list-item {
-  padding: 32px 0px;
 }
 .nav-list-item:hover,
 .nav-list-item:focus {
@@ -99,30 +93,34 @@ ul {
 }
 .site-nav {
   display: flex;
-  margin-left: 0px;
+  margin-left: 93px;
+  align-items: center;
 }
 .site-nav .item:not(:last-child) {
-  margin-right: 50px;
-}
-.contact-list .item:not(:last-child) {
   margin-right: 50px;
 }
 .contact-list {
   display: flex;
   margin-left: auto;
+  align-items: center;
+}
+.contact-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav-list-item,
+.contact-list-item {
+  align-items: center;
+  padding: 32px 0px;
 }
 .contact-list-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 32px 0px;
+  color: var(--paragraph-textcolor);
 }
 .nav-list-item {
   color: var(--title-textcolor);
-}
-.contact-list-item {
-  color: var(--paragraph-textcolor);
 }
 .contact-list-item:hover,
 .contact-list-item:focus {
@@ -209,8 +207,8 @@ padding: 94px 0px;
   display: flex;
   margin-top: 50px;
 }
-.tasks-images-item {
-  flex-basis: calc((100% - 90px) / 3);
+.tasks-images-item:not(:last-child) {
+  margin-right: 30px;
 }
 .tasks-images-item .gap {
   display: block;
@@ -233,25 +231,36 @@ padding: 94px 0px;
 .command-list {
   display: flex;
   padding-top: 50px;
+  margin-left: -30px;
+}
+.command-list > .command-list-item {
+  flex-basis: calc((100% / 3) - 30px);
 }
 .command-list-item {
-  flex-basis: calc(100% / 4 - 30px);
+  text-align: center;
   outline: solid teal 1px;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-left: 30px;
 }
+/* .command-list-item:not(:last-child) {
+  margin-right: 30px;
+} */
 .command-list-item-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-textcolor);
-  padding-top: 30px;
+  margin-top: 30px;
 }
 .command-list-item-text {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--paragraph-textcolor);
-  padding-top: 10px;
+  margin-top: 10px;
 }
 /* ============ styles for footer ============ */
 .footer-section {

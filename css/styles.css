@@ -7,6 +7,7 @@
 /* цвет фона героя и футера 2F303A */
 /* цвет фона секции "команда" */
 /* цвет текста с прозрачностью в футере rgba(255, 255, 255, 0.6)*/
+/* зазор между карточками в 30 пикселей "card-gap"*/
 :root {
   --logo-black-textcolor: #000000;
   --title-textcolor: #212121;
@@ -16,6 +17,7 @@
   --main-background-color: #2f303a;
   --command-section-background-color: #f5f4fa;
   --footer-contacts-textcolor: rgba(255, 255, 255, 0.6);
+  --card-gap: 30px;
 }
 /* COMPONENTS */
 .container {
@@ -24,8 +26,6 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: solid tomato 1px;
-  /* NE TO */
 }
 /* END COMPONENTS */
 /* ============ styles for body ============ */
@@ -65,21 +65,18 @@ ul {
   height: auto;
 }
 /* ============ styles for header ============ */
-.menu .container{
-  display: flex;
-}
-.nav-section {
+.menu .container, .nav-section {
   display: flex;
 }
 .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--theme-textcolor);
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .header-studio {
   color: var(--logo-black-textcolor);
@@ -128,11 +125,11 @@ ul {
 }
 /* ============ styles for hero ============ */
 .hero-section {
-  background-color: var(--main-background-color);
-  text-align: center;
   width: 1600px;
   max-width: 100%;
   margin: 0 auto;
+  background-color: var(--main-background-color);
+  text-align: center;
 }
 .hero-section .container {
   width: 696px;
@@ -148,16 +145,15 @@ ul {
   color: var(--hover-textcolor);
 }
 .modal-btn {
+  padding: 10px 32px;
+  margin-top: var(--card-gap);
+  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--hover-textcolor);
   background-color: var(--theme-textcolor);
-  font-family: inherit;
-  padding: 10px 32px;
-  margin-top: 30px;
-  border-radius: 4px;
 }
 /* ============ styles for our_methods ============ */
 .visually-hidden {
@@ -173,13 +169,12 @@ padding: 94px 0px;
 }
 .methods-list {
   display: flex;
-  margin-left: -30px;
+  margin-left: calc(-1*var(--card-gap));
   padding: 0;
 }
 .methods-list-item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
-  outline: solid teal 1px;
+  flex-basis: calc(100% / 4 - var(--card-gap));
+  margin-left: var(--card-gap);
 }
 .methods-list-item-title {
   font-weight: 700;
@@ -190,84 +185,78 @@ padding: 94px 0px;
   color: var(--title-textcolor);
 }
 .methods-list-item-text {
+  margin-top: 10px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--paragraph-textcolor);
-  margin-top: 10px;
 }
 /* ============ styles for tasks ============ */
 .tasks {
   text-align: center;
   padding: 94px 0px;
 }
-.tasks-command-title {
-}
 .tasks-images {
   display: flex;
   margin-top: 50px;
+  margin-left: calc(-1*var(--card-gap));
 }
-.tasks-images-item:not(:last-child) {
-  margin-right: 30px;
+.tasks-images > .tasks-images-item {
+flex-basis: calc((100% / 3) - var(--card-gap));
 }
 .tasks-images-item .gap {
   display: block;
+  margin-left: var(--card-gap);
 }
 /* ============ styles for command ============ */
-.command-section {
-  background-color: var(--command-section-background-color);
-}
 .command-section .container {
   padding: 94px 0px;
+  background-color: var(--command-section-background-color);
 }
 .tasks-command-title {
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--title-textcolor);
-  text-align: center;
 }
 .command-list {
   display: flex;
   padding-top: 50px;
-  margin-left: -30px;
+  margin-left: calc(-1*var(--card-gap));
 }
 .command-list > .command-list-item {
-  flex-basis: calc((100% / 3) - 30px);
+  flex-basis: calc((100% / 3) - var(--card-gap));
 }
 .command-list-item {
   text-align: center;
-  outline: solid teal 1px;
-  padding-bottom: 30px;
+  padding-bottom: var(--card-gap);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-left: 30px;
+  margin-left: var(--card-gap);
 }
-/* .command-list-item:not(:last-child) {
-  margin-right: 30px;
-} */
 .command-list-item-title {
+  margin-top: var(--card-gap);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-textcolor);
-  margin-top: 30px;
 }
 .command-list-item-text {
+  margin-top: 10px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--paragraph-textcolor);
-  margin-top: 10px;
 }
 /* ============ styles for footer ============ */
 .footer-section {
-  background-color: var(--main-background-color);
   width: 1600px;
   max-width: 100%;
-  margin: 0 auto;  
+  margin: 0 auto; 
+  background-color: var(--main-background-color); 
 }
 .footer-section .container {
   padding: 60px 0px;
@@ -276,8 +265,8 @@ padding: 94px 0px;
   color: var(--hover-textcolor);
 }
 .address-list {
-  font-style: inherit;
   margin-top: 20px;
+  font-style: inherit;
 }
 .geoposition,
 .address-link {
@@ -305,6 +294,7 @@ padding: 94px 0px;
 }
 .address-list-item:first-child {
   margin-top: 0;
+}
 /* ============ styles for PAGE portfolio ============ */
 .modal-btn-portfolio {
   font-weight: 500;
@@ -312,14 +302,12 @@ padding: 94px 0px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  font-family: inherit;
   color: var(--title-textcolor);
 }
 .modal-btn-portfolio:hover,
 .modal-btn-portfolio:focus {
   color: var(--hover-textcolor);
   background-color: var(--theme-textcolor);
-  cursor: pointer;
 }
 .menu-list h3 {
   font-weight: 700;

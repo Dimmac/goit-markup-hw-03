@@ -331,3 +331,6 @@ flex-basis: calc((100% / 3) - var(--card-gap));
   background-color: var(--theme-textcolor);
   color: var(--hover-textcolor);
 }
+.port-section {
+  
+}

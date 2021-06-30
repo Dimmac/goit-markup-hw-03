@@ -51,7 +51,7 @@ ul {
   padding-left: 0px;
 }
 /* обнуление свойств кнопки */
-.button {
+.button, .modal-btn, .modal-btn-portfolio {
   border: 1px solid transparent;
   background: transparent;
   color: inherit;
@@ -67,6 +67,9 @@ ul {
 /* ============ styles for header ============ */
 .menu .container, .nav-section {
   display: flex;
+}
+.menu {
+border-bottom: 1px solid #ECECEC;
 }
 .logo {
   padding-top: 24px;
@@ -155,6 +158,7 @@ ul {
   color: var(--hover-textcolor);
   background-color: var(--theme-textcolor);
 }
+
 /* ============ styles for our_methods ============ */
 .visually-hidden {
   position: absolute;

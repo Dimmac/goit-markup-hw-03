@@ -139,7 +139,6 @@ ul {
 .hero-section .container {
   width: 696px;
   padding-top: 200px;
-  padding-bottom: 280px;
 }
 .hero-title {
   font-weight: 900;
@@ -152,6 +151,7 @@ ul {
 .modal-btn {
   padding: 10px 32px;
   margin-top: var(--card-gap);
+  margin-bottom: 200px;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -309,18 +309,12 @@ flex-basis: calc((100% / 3) - var(--card-gap));
   margin-top: 0;
 }
 /* ============ styles for PAGE portfolio ============ */
-.port-section {
-  padding-bottom: 94px;
-  outline: solid 1px tomato;
-}
+
 .btn-portfolio {
-  /* display: inline-flex; */
-  text-align: center;
+  display: flex;
   width: 611px;
-  max-width: 100%;
+  margin: 0 auto;
   outline: solid 1px teal;
-  margin-left: auto;
-  margin-right: auto;
 }
 .modal-btn-portfolio {
   font-weight: 500;

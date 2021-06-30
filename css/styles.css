@@ -168,10 +168,9 @@ ul {
   width: 1px;
   height: 1px;
   margin: -1px;
-  …
-}
+  …}
 .our-methods-section .container {
-padding-top: 94px;
+  padding-top: 94px;
 }
 .methods-list {
   display: flex;
@@ -309,7 +308,10 @@ flex-basis: calc((100% / 3) - var(--card-gap));
   margin-top: 0;
 }
 /* ============ styles for PAGE portfolio ============ */
-
+.port {
+  padding-bottom: 109px;
+  outline: solid purple 5px;
+}
 .btn-portfolio {
   display: flex;
   width: 611px;

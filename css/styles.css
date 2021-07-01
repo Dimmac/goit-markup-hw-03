@@ -72,10 +72,13 @@ ul {
 }
 .menu .container, .nav-section {
   display: flex;
+  align-items: center;
+}
+.nav-section {
+  padding-top: 26px;
+  padding-bottom: 22px;
 }
 .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -122,6 +125,7 @@ ul {
   color: var(--paragraph-textcolor);
 }
 .nav-list-item {
+  font-weight: 500;
   color: var(--title-textcolor);
 }
 .contact-list-item:hover,
@@ -130,15 +134,16 @@ ul {
 }
 /* ============ styles for hero ============ */
 .hero-section {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin: 0 auto;
   width: 1600px;
   max-width: 100%;
-  margin: 0 auto;
   background-color: var(--main-background-color);
-  text-align: center;
 }
 .hero-section .container {
   width: 696px;
-  padding-top: 200px;
 }
 .hero-title {
   font-weight: 900;
@@ -151,7 +156,6 @@ ul {
 .modal-btn {
   padding: 10px 32px;
   margin-top: var(--card-gap);
-  margin-bottom: 200px;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -169,7 +173,7 @@ ul {
   height: 1px;
   margin: -1px;
 }
-.our-methods-section .container {
+.our-methods-section {
   padding-top: 94px;
 }
 .methods-list {
@@ -203,7 +207,7 @@ ul {
 }
 .tasks-images {
   display: flex;
-  padding-top: 50px;
+  margin-top: 50px;
   margin-left: calc(-1*var(--card-gap));
 }
 .tasks-images > .tasks-images-item {
@@ -215,15 +219,15 @@ flex-basis: calc((100% / 3) - var(--card-gap));
 }
 /* ============ styles for command ============ */
 .command-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
   width: 1600px;
   max-width: 100%;
   margin: 0 auto;
   background-color: var(--command-section-background-color);
-
 }
-.command-section .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.command-thumb {
+  padding: 30px 60px;
 }
 .tasks-command-title {
   text-align: center;
@@ -235,7 +239,7 @@ flex-basis: calc((100% / 3) - var(--card-gap));
 }
 .command-list {
   display: flex;
-  padding-top: 50px;
+  margin-top: 50px;
   margin-left: calc(-1*var(--card-gap));
 }
 .command-list > .command-list-item {
@@ -243,7 +247,6 @@ flex-basis: calc((100% / 3) - var(--card-gap));
 }
 .command-list-item {
   text-align: center;
-  padding-bottom: var(--card-gap);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin-left: var(--card-gap);
@@ -265,13 +268,11 @@ flex-basis: calc((100% / 3) - var(--card-gap));
 }
 /* ============ styles for footer ============ */
 .footer-section {
+  padding: 60px 0px;
   width: 1600px;
   max-width: 100%;
   margin: 0 auto; 
-  background-color: var(--main-background-color); 
-}
-.footer-section .container {
-  padding: 60px 0px;
+  background-color: var(--main-background-color);
 }
 .footer-studio {
   color: var(--hover-textcolor);
@@ -315,11 +316,10 @@ flex-basis: calc((100% / 3) - var(--card-gap));
 .btn-portfolio {
   display: flex;
   justify-content: center;
-  padding-bottom: 14px;
+  margin-bottom: 14px;
 }
 .modal-btn-portfolio {
   padding: 6px 22px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -339,15 +339,16 @@ flex-basis: calc((100% / 3) - var(--card-gap));
 .modal-btn-portfolio:focus {
   color: var(--hover-textcolor);
   background-color: var(--theme-textcolor);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.menu-list h3 {
+.thumb-list h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-textcolor);
 }
-.menu-list p {
+.thumb-list p {
   margin-top: 4px;
   font-weight: 400;
   font-size: 16px;
@@ -359,14 +360,14 @@ flex-basis: calc((100% / 3) - var(--card-gap));
   background-color: var(--theme-textcolor);
   color: var(--hover-textcolor);
 }
-.menu-list {
+.thumb-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1*var(--card-gap));
   margin-top: calc(-1*var(--card-gap));
-  padding-top: 34px;
+  margin-top: 34px;
 }
-.menu-list .thumb {
+.thumb-list .thumb {
   margin-left: var(--card-gap);
   margin-top: var(--card-gap);
   flex-basis: calc((100% / 3) - var(--card-gap));

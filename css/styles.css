@@ -75,8 +75,8 @@ ul {
   align-items: center;
 }
 .nav-section {
-  padding-top: 26px;
-  padding-bottom: 22px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .logo {
   font-family: "Raleway";
@@ -138,7 +138,7 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
   margin: 0 auto;
-  width: 1600px;
+  /* width: 1600px; */
   max-width: 100%;
   background-color: var(--main-background-color);
 }
@@ -210,12 +210,14 @@ ul {
   margin-top: 50px;
   margin-left: calc(-1*var(--card-gap));
 }
+.tasks-images-item {
+  margin-left: var(--card-gap);
+}
 .tasks-images > .tasks-images-item {
 flex-basis: calc((100% / 3) - var(--card-gap));
 }
 .tasks-images-item .gap {
   display: block;
-  margin-left: var(--card-gap);
 }
 /* ============ styles for command ============ */
 .command-section {
@@ -227,7 +229,7 @@ flex-basis: calc((100% / 3) - var(--card-gap));
   background-color: var(--command-section-background-color);
 }
 .command-thumb {
-  padding: 30px 60px;
+  padding: 30px;
 }
 .tasks-command-title {
   text-align: center;
@@ -252,7 +254,6 @@ flex-basis: calc((100% / 3) - var(--card-gap));
   margin-left: var(--card-gap);
 }
 .command-list-item-title {
-  margin-top: var(--card-gap);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -310,13 +311,13 @@ flex-basis: calc((100% / 3) - var(--card-gap));
 }
 /* ============ styles for PAGE portfolio ============ */
 .port {
-  padding-top: 79px;
-  padding-bottom: 109px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .btn-portfolio {
   display: flex;
   justify-content: center;
-  margin-bottom: 14px;
+  margin-bottom: 50px;
 }
 .modal-btn-portfolio {
   padding: 6px 22px;
@@ -365,7 +366,6 @@ flex-basis: calc((100% / 3) - var(--card-gap));
   flex-wrap: wrap;
   margin-left: calc(-1*var(--card-gap));
   margin-top: calc(-1*var(--card-gap));
-  margin-top: 34px;
 }
 .thumb-list .thumb {
   margin-left: var(--card-gap);
